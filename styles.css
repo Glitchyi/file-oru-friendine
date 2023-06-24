@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Google Sans Display;
+    src: url(assets/GoogleSans.ttf);
+}
+
 body {
     background: #D4FFCD;
     display: flex;
@@ -7,28 +12,28 @@ body {
     align-items: center;
     gap: 0.625rem;
 }
-
+.disabled{
+    margin-left: 0;
+    margin-right: 0;
+}
 #main {
     width: 100%;
-    height: 100%;
-    /* padding-left: 29px;
-    padding-right: 29px;
-    padding-top: 63px;
-    padding-bottom: 63px; */
     background: #00644C;
     border-radius: 28px;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     gap: 86px;
-    display: inline-flex
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    border: red;
+    border-width: 20px;
 }
 
 
 .container {
-    padding: 15px;
-    background: #D4FFCD;
-    border-radius: 50px;
+    margin-top: 40px;
     justify-content: center;
     align-items: center;
     display: inline-flex;
@@ -39,9 +44,9 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
-    line-height: 29px;
     text-align: center;
-    color: #00644C;
+    color: #D4FFCD;
+    opacity: 0;
     margin-top: 10px;
 }
 .logo {
@@ -60,8 +65,7 @@ body {
 h1 {
     top: 20px;
     left: 80px;
-    position: absolute;
-    color: #D4FFCD;
+    color: #308F50;
     font-size: min(10vw, 10vh);
     font-family: Google Sans Display;
     font-weight: 700;
@@ -69,8 +73,10 @@ h1 {
 }
 
 .box {
+    border: 20px solid #D4FFCD;
+    border-width: 20px;
     width: 1vw;
-    height: 16vw;
+    height: max(16vw, 16vh);
     padding: 27px;
     background: #308F50;
     border-radius: 35px;
@@ -85,5 +91,6 @@ h1 {
     width: 8vw;
 }
 .boxhov {
+    width: 8vw;
     width: 8vw;
 }
