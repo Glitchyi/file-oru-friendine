@@ -1,0 +1,89 @@
+body {
+    background: #D4FFCD;
+    display: flex;
+    padding: 2.3125rem 2.3125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    /* padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 63px;
+    padding-bottom: 63px; */
+    background: #00644C;
+    border-radius: 28px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+    display: inline-flex
+}
+
+
+.container {
+    padding: 15px;
+    background: #D4FFCD;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+.text{
+    font-family: Google Sans Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    color: #00644C;
+    margin-top: 10px;
+}
+.logo {
+    opacity: 0;
+    transition: opacity 0.5s;
+    src: url(addfile.svg);
+}
+
+.boxhov .logo {
+    opacity: 1;
+}
+.box:hover .logo {
+    opacity: 1;
+}
+
+h1 {
+    top: 20px;
+    left: 80px;
+    position: absolute;
+    color: #D4FFCD;
+    font-size: min(10vw, 10vh);
+    font-family: Google Sans Display;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.box {
+    width: 1vw;
+    height: 16vw;
+    padding: 27px;
+    background: #308F50;
+    border-radius: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: width 0.5s, height 0.5s;
+    /* Combine transitions into one declaration */
+}
+
+.box:hover {
+    width: 8vw;
+}
+.boxhov {
+    width: 8vw;
+}
