@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const { uploadFile } = require('./upload.js');
 const multer = require('multer');
 
